@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 30% 95%;
+    --foreground: 20 14% 8%;
+
+    --card: 20 14% 10%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14% 8%;
+
+    --primary: 16 100% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 24 100% 60%;
+
+    --secondary: 30 20% 92%;
+    --secondary-foreground: 20 14% 8%;
+
+    --muted: 30 15% 90%;
+    --muted-foreground: 20 8% 38%;
+
+    --accent: 16 100% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 15% 85%;
+    --input: 30 15% 88%;
+    --ring: 16 100% 55%;
+
+    --radius: 1rem;
+
+    --surface-dark: 20 14% 8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+  ::selection {
+    background: hsl(var(--primary) / 0.25);
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+  }
+  .gradient-bg {
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+  }
+  .gradient-bg-subtle {
+    background-image: linear-gradient(135deg, hsl(var(--primary) / 0.1), hsl(var(--primary-glow) / 0.1));
+  }
+  .surface-dark {
+    background-color: hsl(var(--surface-dark));
+    color: hsl(0 0% 100%);
+  }
+  .glass-card {
+    @apply bg-card text-card-foreground border border-border/40 shadow-sm;
+  }
+  .glass-card-light {
+    @apply bg-background/60 backdrop-blur-md border border-border/60 shadow-sm;
+  }
+  .glow-border {
+    position: relative;
+  }
+  .glow-border::before {
+    content: "";
+    position: absolute; inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, hsl(var(--primary) / 0.5), transparent 60%);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+  }
+  .section-padding {
+    @apply py-20 md:py-28 px-4;
+  }
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+  .funnel-bg {
+    background:
+      radial-gradient(ellipse 70% 60% at 50% 100%, hsl(var(--primary) / 0.18), transparent 70%),
+      repeating-linear-gradient(0deg, transparent 0 39px, hsl(var(--primary) / 0.18) 39px 40px),
+      repeating-linear-gradient(90deg, transparent 0 39px, hsl(var(--primary) / 0.12) 39px 40px);
+    mask-image: radial-gradient(ellipse 70% 80% at 50% 100%, #000 30%, transparent 75%);
+  }
+  .pill-nav {
+    @apply rounded-full bg-foreground text-background border border-foreground/10 shadow-2xl shadow-foreground/20;
+  }
+}
+
+/* Hide Spline "Built with Spline" watermark/badge */
+a[title="Built with Spline"],
+.spline-badge,
+iframe[src*="splinetool" ] + a {
+  display: none !important;
+  visibility: hidden !important;
+}
