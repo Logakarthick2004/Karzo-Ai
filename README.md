@@ -1,65 +1,98 @@
-# Welcome to this project
+# Karzo AI
 
-## Project info
+Karzo AI is an AI-powered automotive assistant designed to help users with vehicle-related information, maintenance guidance, troubleshooting, and intelligent support through a modern web interface.
 
-**URL**: https://example.com/projects/REPLACE_WITH_PROJECT_ID
+## 🌐 Live Demo
 
-## How can I edit this code?
+**Website:** https://karzo-ai-rc9x.vercel.app/
 
-There are several ways of editing your application.
+## ✨ Features
 
-Edit the project directly using your preferred IDE or CI/CD workflow.
+* AI-powered vehicle assistance
+* User-friendly and responsive interface
+* Real-time conversational experience
+* Fast and modern React application
+* Mobile and desktop compatible
+* Secure and scalable architecture
 
-**Use your preferred IDE**
+## 🛠️ Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes.
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* shadcn/ui
+* Vercel Deployment
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚀 Getting Started
 
-Follow these steps:
+### Prerequisites
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+* Node.js (v18 or later)
+* npm
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Installation
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+git clone https://github.com/Logakarthick2004/Karzo-Ai.git
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+cd Karzo-Ai
+
+npm install
+```
+
+### Run Locally
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```text
+http://localhost:5173
+```
 
-**Use GitHub Codespaces**
+## 📦 Build for Production
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run build
+```
 
-## What technologies are used for this project?
+## 🚀 Deployment
 
-This project is built with:
+The project is deployed on Vercel:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+https://karzo-ai-rc9x.vercel.app/
 
-## How can I deploy this project?
+## 📂 Project Structure
 
-Use your preferred hosting platform or CI/CD pipeline to publish the built site.
+```text
+src/
+├── components/
+├── pages/
+├── hooks/
+├── lib/
+├── App.tsx
+└── main.tsx
+```
 
-## Can I connect a custom domain?
+## 🤝 Contributing
 
-Yes — configure your hosting platform or DNS provider to point your domain to the deployed site.
+Contributions, issues, and feature requests are welcome.
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to your branch
+5. Create a Pull Request
+
+## 📄 License
+
+This project is licensed under the Apache-2.0 license.
+
+## 👨‍💻 Author
+
+Karthick
+
+GitHub: https://github.com/Logakarthick2004
