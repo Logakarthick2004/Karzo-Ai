@@ -4,7 +4,7 @@ Karzo AI is an AI-powered automotive assistant designed to help users with vehic
 
 ## 🌐 Live Demo
 
-**Website:** https://karzo-ai-rc9x.vercel.app/
+**Website:** https://karzo-ai.vercel.app
 
 ## ✨ Features
 
@@ -63,7 +63,7 @@ npm run build
 
 The project is deployed on Vercel:
 
-https://karzo-ai-rc9x.vercel.app/
+https://karzo-ai.vercel.app
 
 ## 📂 Project Structure
 
